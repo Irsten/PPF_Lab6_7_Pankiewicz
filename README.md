@@ -1,0 +1,1 @@
+https://github.com/Irsten/PPF_Lab6_7_wyklad.git

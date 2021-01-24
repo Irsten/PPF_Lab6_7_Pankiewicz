@@ -1,0 +1,19 @@
+.contentDivClass {
+    background-color: yellowgreen;
+}
+.contentsFlex {
+    display:-webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: left;
+}
+.contentsFlexImg {
+    float: left;
+    padding: 20px;
+}
+.contentsFlexTxt {
+    align-self: stretch;
+    text-align: justify;
+    padding-right: 20px;
+}
