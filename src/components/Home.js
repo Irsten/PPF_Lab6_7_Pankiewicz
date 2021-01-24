@@ -1,14 +1,15 @@
 /* eslint-disable no-template-curly-in-string */
-/* eslint-disable no-useless-escape */
-import React, {Component} from 'react';
-import './CContents.css';
-import jsonData from '../res/text.json'
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+import React, { Component } from "react";
+import jsonData from "../res/text.json";
+import "./Home.css";
 
-class CContents extends Component {
-
+export default class Home extends Component {
     constructor() {
         super()
-        this.state = {msg: 'Witaj użytkowniku. Kliknij przycisk aby poznać wiadomość'}
+        this.state = {msg: 'Witaj użytkowniku. Kliknij przycisk aby poznać wiadomość'
+    }
         this.txtData = () => JSON.parse(JSON.stringify(jsonData));
         const imgContext = require.context('../res/', false,/\.jpg$/);
         let img = {};
@@ -43,5 +44,3 @@ class CContents extends Component {
         )
     }
 }
-
-export  default CContents
