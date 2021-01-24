@@ -10,7 +10,7 @@ export default function Header() {
       <Link to="Home">
           <img src={logo} className="logo" alt="logo" />
       </Link>
-      <h2>Rasy psów</h2>
+      <h2>Pieski</h2>
     </div>
   );
 }
@@ -18,11 +18,10 @@ export default function Header() {
 
 // class Header extends Component {
 //     render() {
-//       const {aName, aFamily} = this.props;
 //       return (
 //         <div className="header">
 //           <img src={logo} className="logo" alt="logo" />
-//           <h2>Rasy psów</h2>
+//           <h2>Pieski</h2>
 //         </div>
 //       );
 //     }

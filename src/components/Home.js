@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import jsonData from "../res/text.json";
 import "./Home.css";
 
+
 export default class Home extends Component {
     constructor() {
         super()
@@ -34,13 +35,13 @@ export default class Home extends Component {
                 <p className="contentsFlexTxt">{item.text}</p>
             </div>
         ))
-
         return (
             <div className='contentDivClass'>
                 {items}
                 <h1>{this.state.msg}</h1>
                 <button onClick={()=> this.changeMsg()}>Kliknij, aby poznać tajemnicę</button>
             </div>
+            
         )
     }
 }

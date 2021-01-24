@@ -1,5 +1,5 @@
 .contentDivClass {
-    background-color: yellowgreen;
+    background-color: khaki;
 }
 .contentsFlex {
     display:-webkit-flex;
@@ -19,6 +19,16 @@
     text-align: justify;
     padding-right: 20px;
 }
+.film {
+    display:-webkit-flex;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    margin: auto;
+    width: 640px;
+    height: 360px;
+}
 @media screen and (max-width: 1025px) {
     .contentsFlex {
         -webkit-flex-drection: column;
@@ -32,5 +42,10 @@
         flex-direction: column;
         align-items: center;
         padding: 0 10px 0 10px;
+    }
+    .film {
+        width: 320px;
+        height: 180px;
+        margin: auto;
     }
 }

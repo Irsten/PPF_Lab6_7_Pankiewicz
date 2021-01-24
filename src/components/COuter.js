@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
-import CInner from './CInner'
 import './COuter.css'
-import styl from './COuter.module.css'
+import ReactPlayer from 'react-player'
 
 export default class COuter extends Component {
 
@@ -25,29 +24,29 @@ export default class COuter extends Component {
     render () {
         console.log("COuter - render()")
         return (
-            <div className='bgClassNormal'>
-                <h2 className={styl.bgClassModule}>Komponent zewnętrzny</h2>
-                <button onClick={this.stateChange}>Zmiana stanu</button>
-                <CInner/>
+            <div className="reactPlayer">
+                <div className="film">
+                    <ReactPlayer className='Player' url='https://www.youtube.com/watch?v=fvOCPf7fPaE' width='100%' height='100%'/>
+                </div>
             </div>
         )
     }
 
-    stateChange = () => {
-        this.setState({st: "Klik"})
-    }
+    // stateChange = () => {
+    //     this.setState({st: "Klik"})
+    // }
 
-    shouldComponentUpdate() {
-        console.log("COuter - shouldComponentUpdate")
-        return true
-    }
+    // shouldComponentUpdate() {
+    //     console.log("COuter - shouldComponentUpdate")
+    //     return true
+    // }
 
-    getSnapshotBeforeUpdate(props,pstate) {
-        console.log("getSnapshotBeforeUpdate")
-        return null
-    }
+    // getSnapshotBeforeUpdate(props,pstate) {
+    //     console.log("getSnapshotBeforeUpdate")
+    //     return null
+    // }
 
-    componentDidUpdate() {
-        console.log("componentDidUpdate")
-    }
+    // componentDidUpdate() {
+    //     console.log("componentDidUpdate")
+    // }
 }
