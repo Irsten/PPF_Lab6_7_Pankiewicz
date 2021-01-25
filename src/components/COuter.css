@@ -5,12 +5,16 @@
 .film {
     display:-webkit-flex;
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     padding: 10px;
     margin: auto;
     width: 640px;
     height: 360px;
+}
+.imie {
+    margin-top: 10px;
 }
 @media screen and (max-width: 1025px) {
     .contentsFlex {

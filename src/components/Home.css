@@ -1,6 +1,9 @@
 .contentDivClass {
     background-color: khaki;
 }
+.contentDivClass h2 {
+    padding: 20px;
+}
 .contentsFlex {
     display:-webkit-flex;
     display: flex;
