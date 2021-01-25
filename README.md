@@ -1,1 +1,1 @@
-https://github.com/Irsten/PPF_Lab6_7_wyklad.git
+https://github.com/Irsten/PPF_Lab6_7_Pankiewicz.git
