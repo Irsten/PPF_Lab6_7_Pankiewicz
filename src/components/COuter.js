@@ -11,24 +11,20 @@ export default class COuter extends Component {
         }
         console.log('COuter - konstruktor');
     }
-
-    // static getDerivedStateFromProps(props, state) {
-    //     console.log("COuter - getDerivedStateFromProps()")
-    //     return null
-    // }
-
-    // componentDidMount() {
-    //     console.log("COuter - componentDidMount()")
-    // }
-
-    play() {
+    start() {
         alert('Filmik włączony')
     }
+    stop() {
+        alert('Filmik zatrzymany')
+    }
     bufferingProgress() {
-        alert('Filmik się bufforuje')
+        console.log('Filmik się bufforuje')
     }
     nameReset() {
         alert('Imie zostało zresetowane')
+    }
+    paste() {
+        alert('Wkleiłeś tekst')
     }
 
     render () {
@@ -36,8 +32,12 @@ export default class COuter extends Component {
         return (
             <div className="reactPlayer">
                 <div className="film">
-                    <ReactPlayer className='Player' url='https://www.youtube.com/watch?v=p4ohqiVbXbo' onProgress={()=>this.bufferingProgress()} onPlay={()=>this.play()} width='100%' height='100%'/>
-                    <form className="imie" onReset={()=>this.nameReset()}>
+                    <ReactPlayer className='Player' url='https://www.youtube.com/watch?v=p4ohqiVbXbo' 
+                    onProgress={()=>this.bufferingProgress()} 
+                    onPlay={()=>this.start()} 
+                    onPause={()=>this.stop()}
+                    width='100%' height='100%'/>
+                    <form className="imie" onPaste={()=>this.paste()} onReset={()=>this.nameReset()}>
                         Podaj imię swojego psa: <input type="text"/>
                         <input type="reset" />
                     </form>
@@ -45,22 +45,4 @@ export default class COuter extends Component {
             </div>
         )
     }
-
-    // stateChange = () => {
-    //     this.setState({st: "Klik"})
-    // }
-
-    // shouldComponentUpdate() {
-    //     console.log("COuter - shouldComponentUpdate")
-    //     return true
-    // }
-
-    // getSnapshotBeforeUpdate(props,pstate) {
-    //     console.log("getSnapshotBeforeUpdate")
-    //     return null
-    // }
-
-    // componentDidUpdate() {
-    //     console.log("componentDidUpdate")
-    // }
 }

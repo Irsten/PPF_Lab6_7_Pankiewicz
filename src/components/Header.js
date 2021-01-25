@@ -14,17 +14,3 @@ export default function Header() {
     </div>
   );
 }
-
-
-// class Header extends Component {
-//     render() {
-//       return (
-//         <div className="header">
-//           <img src={logo} className="logo" alt="logo" />
-//           <h2>Pieski</h2>
-//         </div>
-//       );
-//     }
-//   }
-
-//   export default Header
